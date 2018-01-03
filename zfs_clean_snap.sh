@@ -3,10 +3,12 @@
 ### Author Andrew;
 ### To clean old snapshot if zfs has capacity more 85%; 
 ### Last edited: Junery 02 2018;
+###
+### DELETE_SNAPSHOTS; MIN_SNAPSHOTS; ZPOOL_CAPACITY are variabels for Jenkins
 
-COUNT_DELETE=30
-COUNT_MIN=10
-ZFS_CAP=85
+COUNT_DELETE=${DELETE_SNAPSHOTS:=30}
+COUNT_MIN=${MIN_SNAPSHOTS:=10}
+ZFS_CAP=${ZPOOL_CAPACITY:=85}
 ZFS=$(which zfs)
 ZPOOL=$(which zpool)
 ZPOOL_SIZE=$($ZPOOL list -H -o cap)
