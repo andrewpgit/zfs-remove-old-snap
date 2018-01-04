@@ -5,6 +5,7 @@
 ### Last edited: Junery 02 2018;
 ###
 ### DELETE_SNAPSHOTS => $1; MIN_SNAPSHOTS => $2; ZPOOL_CAPACITY => $3 are variabels for Jenkins
+###
 
 COUNT_DELETE=${1:-30}
 COUNT_MIN=${2:-10}
