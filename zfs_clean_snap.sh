@@ -97,4 +97,4 @@ fi
 
 ## Main function is run
 main
-logs "End destroy scritp"
+logs "End destroy script"
